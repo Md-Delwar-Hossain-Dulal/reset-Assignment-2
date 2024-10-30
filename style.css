@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -17,8 +18,9 @@ body {
 
 .all-section {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-    height: 715px;
+    /* height: 715px; */
     padding-top: 40px;
+    /* height: auto; */
 }
 
 .navbar h1 {
@@ -28,7 +30,6 @@ body {
     font-size: 36px;
     font-weight: 800;
     margin-top: 13px;
-    /* font-family: inter; */
 }
 
 .navbar {
@@ -93,7 +94,6 @@ body {
     font-family: 'Miama', sans-serif;
     font-size: 150px;
     font-weight: 400;
-
 }
 
 .banner-text p {
@@ -104,7 +104,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
-
 }
 
 .button {
@@ -175,10 +174,7 @@ body {
 .play {
     display: flex;
     align-items: center;
-
 }
-
-
 
 .img-text2 {
     color: rgb(255, 255, 255);
@@ -201,6 +197,72 @@ body {
     text-align: left;
 }
 
+/* ? start Change Your Habits */
+
+.habits {
+    padding-top: 60px;
+
+}
+
+.habits-title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.habits-title h3 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+}
+
+.habits-title p {
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.habits-flex {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.habits-imgdiv {
+    width: 231px;
+
+}
+
+.habits-img {
+    border-radius: 50%;
+    border: 3px solid #1a1a1a;
+}
+
+.habits-imgdiv h4 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding-top: 15px;
+}
+
+.habits-imgdiv p {
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
 
 /* TODO: small device */
 @media (max-width: 576px) {
@@ -308,5 +370,31 @@ body {
         font-family: "Inter", sans-serif;
         backdrop-filter: blur(20px);
         background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* ! habits start */
+    .habits {
+        width: 80%;
+        padding-top: 10px;
+        margin: 0 auto;
+
+    }
+
+    .habits-title h3 {
+        color: rgb(255, 255, 255);
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .habits-flex {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .habits-imgdiv {
+        width: 300px;
     }
 }
