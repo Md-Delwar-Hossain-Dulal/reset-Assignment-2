@@ -8,7 +8,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .home-color {
     border-radius: 25px;
@@ -17,10 +17,11 @@ body {
 }
 
 .all-section {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-    /* height: 715px; */
+    background: linear-gradient(180deg,
+            rgb(17, 17, 17),
+            rgba(119, 119, 119, 0) 100%);
     padding-top: 40px;
-    /* height: auto; */
+    height: auto;
 }
 
 .navbar h1 {
@@ -65,8 +66,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
-
 .ham-menu {
     color: white;
     visibility: hidden;
@@ -87,11 +86,11 @@ body {
     font-size: 78px;
     color: rgb(255, 255, 255);
     width: 600px;
-    line-height: 99.50%;
+    line-height: 99.5%;
 }
 
 .new-text {
-    font-family: 'Miama', sans-serif;
+    font-family: "Miama", sans-serif;
     font-size: 150px;
     font-weight: 400;
 }
@@ -133,18 +132,19 @@ body {
 
 .img {
     width: 349px;
-    height: 580px;
-    background: url(./images/Images\ 2.png);
+    height: auto;
 }
 
 .img-div {
     padding-top: 32px;
+    position: relative;
+    height: auto;
 }
 
 .img-text1 {
     position: absolute;
-    top: 570px;
-    right: 410px;
+    bottom: 80px;
+    left: -50px;
     padding: 15px 25px;
     color: rgb(255, 255, 255);
     font-family: "Inter", sans-serif;
@@ -174,6 +174,7 @@ body {
 .play {
     display: flex;
     align-items: center;
+    font-size: 22px;
 }
 
 .img-text2 {
@@ -181,8 +182,8 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    top: 290px;
-    right: 125px;
+    top: 160px;
+    right: 5px;
     padding: 5px 15px;
     font-family: "Inter", sans-serif;
     backdrop-filter: blur(20px);
@@ -201,7 +202,6 @@ body {
 
 .habits {
     padding-top: 60px;
-
 }
 
 .habits-title {
@@ -238,7 +238,6 @@ body {
 
 .habits-imgdiv {
     width: 231px;
-
 }
 
 .habits-img {
@@ -264,137 +263,172 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* TODO: small device */
-@media (max-width: 576px) {
+/* ! >>>>>>>>>>>>>>>>>>>>>>>> Run Section <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.run-section {
+    display: flex;
+    border-radius: 20px;
+    width: 80%;
+    margin: 50px auto;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+}
 
-    /* font-family: 'Miama', sans-serif; */
-    .nav-4 {
-        visibility: hidden;
+.run-text {
+    width: 350px;
+    padding: 40px 0 40px 50px;
+}
 
-    }
+.run-text h4 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 20px;
-    }
+.run-text p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
 
-    .banner-parent {
-        display: flex;
-        flex-direction: column;
-        margin: 0 20px;
+.run-button {
+    margin-top: 30px;
+}
 
-    }
+.mountain-img {
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 20px 20px 15px 0;
+    object-fit: cover;
+    object-position: center right;
+}
 
-    .ham-menu {
-        visibility: visible;
-        position: absolute;
-        right: 15px;
-        top: 50px;
-    }
+/* !..............................team section............................. */
+.team-section {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    .banner-text h1 {
-        width: 298px;
-        margin-top: 50px;
-        font-family: 900;
-        font-size: 50px;
-        line-height: 99.50%;
-    }
+.team-section h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
-    .new-text {
-        font-family: 'Miama', sans-serif;
-        font-size: 90px;
-        font-weight: 400;
+.team-section-p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 14px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
 
-    }
+/* ?Team Grid Styling */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1a1a1a;
+    gap: 20px;
+    margin: 58px 0;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 18px;
+}
 
-    .banner-text p {
-        width: 300px;
-        font-size: 16px;
-        padding-top: 28px;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        text-align: left;
-    }
+/*? Team Member Card Styling */
+.team-member {
+    gap: 20px;
+    border-radius: 10px;
+    position: relative;
+}
 
+#photo {
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer1.png");
+    background-size: cover;
+}
 
-    .button {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 28px;
-    }
+#photo2 {
+    height: 256px;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer2.png");
+    background-size: cover;
+}
 
-    .button-1,
-    .button-2 {
-        color: rgb(255, 255, 255);
-        padding: 20px 40px;
-        border-radius: 42px;
-        background: rgb(230, 83, 60);
-        font-family: "Inter", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        border: none;
-    }
+#photo3 {
+    width: auto;
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer3.png");
+    background-size: cover;
+}
 
-    .img {
-        width: 100%;
-        height: 490px;
-        background: url(./images/Images\ 2.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-    }
+#photo4 {
+    width: auto;
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer4.png");
+    background-size: cover;
+}
 
-    .img-text1 {
-        position: absolute;
-        top: 850px;
-        right: 200px;
-        padding: 15px 25px;
-        color: rgb(255, 255, 255);
-        font-family: "Inter", sans-serif;
-        display: flex;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        backdrop-filter: blur(5px);
-        background: rgba(48, 48, 48, 0.54);
-        gap: 10px;
-    }
+#photo5 {
+    width: auto;
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer5.png");
+    background-size: cover;
+}
 
-    .img-text2 {
-        color: rgb(255, 255, 255);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        position: absolute;
-        top: 630px;
-        right: 10px;
-        padding: 5px 15px;
-        font-family: "Inter", sans-serif;
-        backdrop-filter: blur(20px);
-        background: rgba(255, 255, 255, 0.1);
-    }
+#photo6 {
+    width: auto;
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/trainer6.png");
+    background-size: cover;
+}
 
-    /* ! habits start */
-    .habits {
-        width: 80%;
-        padding-top: 10px;
-        margin: 0 auto;
+.team-text {
+    position: absolute;
+    text-align: left;
+    bottom: 20px;
+    left: 20px;
+}
 
-    }
+.team-text h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
 
-    .habits-title h3 {
-        color: rgb(255, 255, 255);
-        font-size: 38px;
-        font-weight: 900;
-        line-height: 120%;
-        text-align: center;
-    }
+.team-text p {
+    font-size: 0.9em;
+    color: #aaa;
+    padding-top: 7px;
+}
 
-    .habits-flex {
-        flex-direction: column;
-        width: 100%;
-        gap: 30px;
-    }
+/* !.......................Footer...................... */
 
-    .habits-imgdiv {
-        width: 300px;
-    }
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
 }
