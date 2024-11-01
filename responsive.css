@@ -146,6 +146,7 @@
     /* !run-section */
     .run-section {
         flex-direction: column;
+        /* width: 100%; */
     }
 
     .run-text {
@@ -237,35 +238,40 @@
     }
 
     #photo {
-            height: 256px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("./images/trainer1.png");
-            background-size: cover;
-        }
-    #photo2{
-            height: 256px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("./images/trainer2.png");
-            background-size: cover;
-        }
-    #photo3{
-            height: 256px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("./images/trainer3.png");
-            background-size: cover;
-        }
-    #photo4{
-            height: 256px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("./images/trainer4.png");
-            background-size: cover;
-        }
-    #photo5{
-            height: 256px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url("./images/trainer5.png");
-            background-size: cover;
-        }
+        height: 256px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("./images/trainer1.png");
+        background-size: cover;
+    }
+
+    #photo2 {
+        height: 256px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("./images/trainer2.png");
+        background-size: cover;
+    }
+
+    #photo3 {
+        height: 256px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("./images/trainer3.png");
+        background-size: cover;
+    }
+
+    #photo4 {
+        height: 256px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("./images/trainer4.png");
+        background-size: cover;
+    }
+
+    #photo5 {
+        height: 256px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("./images/trainer5.png");
+        background-size: cover;
+    }
+
     #photo6 {
         height: 256px;
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -290,5 +296,37 @@
         font-size: 0.9em;
         color: #aaa;
         padding-top: 7px;
+    }
+
+
+    /* !footer */
+    .footer-column {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .footer-child1 h3 {
+        width: 443px;
+        font-size: 45px;
+        font-style: italic;
+    }
+
+    .footer-child1 p {
+        padding-top: 15px;
+    }
+
+    .footer-child2 h3,
+    .footer-child3 h3 {
+        padding-top: 20px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .footer-child2 p,
+    .footer-child3 p {
+        font-size: 15px;
+        padding-top: 8px;
     }
 }
